@@ -3,13 +3,16 @@ import {IoCartOutline} from "react-icons/io5"
 import { Link } from "react-router-dom";
 
 const CartIcon = () =>{
-  return <IoCartOutline className="text-4xl"></IoCartOutline>;
+  return <div className="relative">
+    <IoCartOutline className="text-5xl"/>
+    <span className="absolute -top-[5px] right-0 bg-red-500 p-1 px-2 rounded-full text-white">0</span>
+  </div>;
 }
 
 const Header = () => {
   return (
     <header className="w-full shadow-md">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
          
           <CiShoppingCart className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" />
