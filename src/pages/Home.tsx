@@ -56,7 +56,7 @@ const Home = () => {
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-4 mx-auto">
         <div className="flex flex-wrap -m-4">
-          {data.length > 1 &&
+          {data.length >= 1 &&
             data.map(
               (
                 c: {
